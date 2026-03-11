@@ -32,10 +32,79 @@ cursor:pointer;
 transform:translateY(-10px);
 }
 
+.flexbox{
+display:flex;
+justify-content:space-evenly;
+gap: 10px;
+align-items: center;
+
+
+}
+
+.signup-form{
+    width: 500px;
+    background-color: #cccccc3f;
+    padding: 25px;
+    border-radius: 20px;
+
+}
+input[type="text"], input[type="email"], input[type="password"] , input[type="tel"]  {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#message{
+    width: 250px;
+    max-width: 250px;
+   min-height: 100px;
+    max-height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#signup-btn{
+    padding: 10px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#signup-btn:hover{
+    background-color: #555;
+    transition: all 0.6s ease;
+}
+
+.note a{
+    font-size: 14px;
+    color: #fff;
+    
+}
+
 footer{
 background:#111;
 color:white;
 text-align:center;
 padding:20px;
->>>>>>> 78c53182121ec5eb19a86b97f4f532a7e1ae8e3f
+
+}
+
+@media (max-width: 768px) {
+  
+    .flexbox{
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+.signup-form{
+    width:400px;
+   margin-bottom: 10px;
+}
+   
 }
